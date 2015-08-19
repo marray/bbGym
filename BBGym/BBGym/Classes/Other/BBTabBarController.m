@@ -7,7 +7,7 @@
 //
 
 #import "BBTabBarController.h"
-#import "BBHomeViewController.h"
+#import "BBIdentifyCodeController.h"
 #import "BBPersonalViewController.h"
 #import "BBFilterViewController.h"
 
@@ -21,7 +21,7 @@
     [super viewDidLoad];
     
     
-    BBHomeViewController *home=[[BBHomeViewController alloc] init];
+    BBIdentifyCodeController *home=[[BBIdentifyCodeController alloc] init];
     [self childController:home WithTitle:@"首页" image:@"shouye" selectedImage:@" "];
     
     BBFilterViewController *message=[[BBFilterViewController alloc] init];

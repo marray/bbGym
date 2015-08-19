@@ -15,9 +15,6 @@
 @end
 
 @implementation BBIdentifyCodeController
-{
-    UIView *header;
-}
 
 static NSString * const reuseIdentifier = @"Cell";
 static NSString * const kheaderIdentifier = @"kheaderIdentifier";
@@ -26,7 +23,7 @@ static NSString * const kheaderIdentifier = @"kheaderIdentifier";
 {
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     // cell的大小
-    layout.itemSize = CGSizeMake(100, 100);
+//    layout.itemSize = CGSizeMake(100,100);
     return [self initWithCollectionViewLayout:layout];
 }
 
@@ -41,9 +38,6 @@ static NSString * const kheaderIdentifier = @"kheaderIdentifier";
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
    
     [self createButtonArray];
-    
-    header=[[UIView alloc] initWithFrame:CGRectMake(0, 100, self.view.width, 200)];
-    header.backgroundColor=[UIColor redColor];
     
      [self.collectionView registerNib:[UINib nibWithNibName:@"BBIdentityHearderView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kheaderIdentifier];
 
@@ -69,7 +63,6 @@ static NSString * const kheaderIdentifier = @"kheaderIdentifier";
     UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
     [button setBackgroundImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
     [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
-    button.size = CGSizeMake(50, 50);
     [_deals addObject:button];
 }
 
@@ -93,12 +86,26 @@ static NSString * const kheaderIdentifier = @"kheaderIdentifier";
     return cell;
 }
 
+
 #pragma mark <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
 
     
 }
+
+//定义每个UICollectionViewCell 的大小
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGRect rect = [[UIScreen mainScreen] bounds];
+    CGFloat width = rect.size.width;
+    NSLog(@"宽度：%f",width);
+    if(width==320){
+        return CGSizeMake(80, 80);
+    }
+    return CGSizeMake(100, 100);
+}
+
 
 //返回头headerView的大小
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
@@ -117,6 +124,11 @@ static NSString * const kheaderIdentifier = @"kheaderIdentifier";
     return view;
 }
 
+//定义每个UICollectionView 的 margin
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(20, 20, 20, 20);
+}
 
 
 @end
