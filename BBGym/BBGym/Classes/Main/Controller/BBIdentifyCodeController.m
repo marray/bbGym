@@ -8,6 +8,7 @@
 
 #import "BBIdentifyCodeController.h"
 #import "UIView+Extension.h"
+#import "MyCell.h"
 
 @interface BBIdentifyCodeController ()
 @property (nonatomic, strong) NSMutableArray *deals;
@@ -16,7 +17,7 @@
 
 @implementation BBIdentifyCodeController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"MyCell";
 static NSString * const kheaderIdentifier = @"kheaderIdentifier";
 
 - (instancetype)init
@@ -35,27 +36,18 @@ static NSString * const kheaderIdentifier = @"kheaderIdentifier";
     self.view.backgroundColor = BBColor(219, 218, 219);
     self.collectionView.backgroundColor =[UIColor whiteColor];
     
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"MyCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
    
     [self createButtonArray];
     
-     [self.collectionView registerNib:[UINib nibWithNibName:@"BBIdentityHearderView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kheaderIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"BBIdentityHearderView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kheaderIdentifier];
 
 }
 
 -(void)createButtonArray
 {
     _deals=[[NSMutableArray alloc]init];
-    [self getItemWithImage:@"个人介绍" action:@selector(personal)];
-    [self getItemWithImage:@"发布课程" action:@selector(pubCourse)];
-    [self getItemWithImage:@"课程管理" action:@selector(CourseCongure)];
-    [self getItemWithImage:@"我的视频" action:@selector(Video)];
-    [self getItemWithImage:@"我的钱包" action:@selector(Wallet)];
-    [self getItemWithImage:@"我的学员" action:@selector(Student)];
-    [self getItemWithImage:@"设置" action:@selector(Setting)];
-    [self getItemWithImage:@"客服" action:@selector(CustomerService)];
-    [self getItemWithImage:@"加号" action:@selector(add)];
-
+    [_deals addObjectsFromArray:@[@"个人介绍", @"发布课程", @"课程管理", @"我的视频" , @"我的钱包", @"我的学员", @"设置", @"客服", @"加号"]];
 }
 
 -(void)getItemWithImage:(NSString *)image action:(SEL)action
@@ -65,7 +57,6 @@ static NSString * const kheaderIdentifier = @"kheaderIdentifier";
     [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     [_deals addObject:button];
 }
-
 
 
 #pragma mark <UICollectionViewDataSource>
@@ -78,10 +69,10 @@ static NSString * const kheaderIdentifier = @"kheaderIdentifier";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    MyCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-   
-    cell.backgroundView=_deals[indexPath.item];
+    NSLog(@"%@",_deals[indexPath.row]);
+    [cell.btn setBackgroundImage:[UIImage imageNamed:_deals[indexPath.row]] forState:UIControlStateNormal];
     
     return cell;
 }
@@ -90,8 +81,7 @@ static NSString * const kheaderIdentifier = @"kheaderIdentifier";
 #pragma mark <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-
-    
+    NSLog(@"22");
 }
 
 //定义每个UICollectionViewCell 的大小
@@ -103,7 +93,7 @@ static NSString * const kheaderIdentifier = @"kheaderIdentifier";
     if(width==320){
         return CGSizeMake(80, 80);
     }
-    return CGSizeMake(100, 100);
+    return CGSizeMake(80, 80);
 }
 
 
