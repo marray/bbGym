@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		18389B821B8609C700FE570A /* BBFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18389B811B8609C700FE570A /* BBFilterViewController.m */; };
 		18389B861B861D0900FE570A /* BBFilterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18389B841B861D0900FE570A /* BBFilterViewCell.m */; };
 		18389B871B861D0900FE570A /* BBFilterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18389B851B861D0900FE570A /* BBFilterViewCell.xib */; };
+=======
+>>>>>>> f386f0a59132465eedf2632608021f90d32525ab
 		184A8A881B8575B9000E85D7 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A8A861B8575B9000E85D7 /* MyCell.m */; };
 		184A8A891B8575B9000E85D7 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184A8A871B8575B9000E85D7 /* MyCell.xib */; };
 		4CAF50221B8427FC00FE3CBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAF50211B8427FC00FE3CBC /* Images.xcassets */; };
@@ -49,11 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		18389B801B8609C700FE570A /* BBFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFilterViewController.h; sourceTree = "<group>"; };
 		18389B811B8609C700FE570A /* BBFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFilterViewController.m; sourceTree = "<group>"; };
 		18389B831B861D0900FE570A /* BBFilterViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFilterViewCell.h; sourceTree = "<group>"; };
 		18389B841B861D0900FE570A /* BBFilterViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFilterViewCell.m; sourceTree = "<group>"; };
 		18389B851B861D0900FE570A /* BBFilterViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBFilterViewCell.xib; sourceTree = "<group>"; };
+=======
+>>>>>>> f386f0a59132465eedf2632608021f90d32525ab
 		184A8A851B8575B9000E85D7 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
 		184A8A861B8575B9000E85D7 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 		184A8A871B8575B9000E85D7 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
@@ -378,7 +384,10 @@
 			files = (
 				4CAF50BC1B846B5700FE3CBC /* BBIdentityHearderView.xib in Resources */,
 				184A8A891B8575B9000E85D7 /* MyCell.xib in Resources */,
+<<<<<<< HEAD
 				18389B871B861D0900FE570A /* BBFilterViewCell.xib in Resources */,
+=======
+>>>>>>> f386f0a59132465eedf2632608021f90d32525ab
 				4CAF50221B8427FC00FE3CBC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +424,10 @@
 				4CAF50AC1B8454D100FE3CBC /* UIView+AutoLayout.m in Sources */,
 				4CAF507C1B842F7100FE3CBC /* BBPersonalViewController.m in Sources */,
 				4CAF50A51B84540800FE3CBC /* NSObject+MJCoding.m in Sources */,
+<<<<<<< HEAD
 				18389B861B861D0900FE570A /* BBFilterViewCell.m in Sources */,
+=======
+>>>>>>> f386f0a59132465eedf2632608021f90d32525ab
 				184A8A881B8575B9000E85D7 /* MyCell.m in Sources */,
 				4CAF509E1B84540800FE3CBC /* MJConst.m in Sources */,
 				4CAF50A21B84540800FE3CBC /* MJMethod.m in Sources */,
