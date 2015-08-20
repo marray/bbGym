@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18389B821B8609C700FE570A /* BBFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18389B811B8609C700FE570A /* BBFilterViewController.m */; };
+		18389B861B861D0900FE570A /* BBFilterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18389B841B861D0900FE570A /* BBFilterViewCell.m */; };
+		18389B871B861D0900FE570A /* BBFilterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18389B851B861D0900FE570A /* BBFilterViewCell.xib */; };
+		184A8A881B8575B9000E85D7 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A8A861B8575B9000E85D7 /* MyCell.m */; };
+		184A8A891B8575B9000E85D7 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184A8A871B8575B9000E85D7 /* MyCell.xib */; };
 		4CAF50221B8427FC00FE3CBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAF50211B8427FC00FE3CBC /* Images.xcassets */; };
 		4CAF50311B8427FC00FE3CBC /* BBGymTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF50301B8427FC00FE3CBC /* BBGymTests.m */; };
 		4CAF50611B842B0F00FE3CBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF505F1B842B0F00FE3CBC /* AppDelegate.m */; };
 		4CAF50621B842B0F00FE3CBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF50601B842B0F00FE3CBC /* main.m */; };
 		4CAF50651B842D8E00FE3CBC /* BBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF50641B842D8E00FE3CBC /* BBTabBarController.m */; };
 		4CAF50681B842DDE00FE3CBC /* BBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF50671B842DDE00FE3CBC /* BBHomeViewController.m */; };
-		4CAF50791B842F4400FE3CBC /* BBFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF50781B842F4400FE3CBC /* BBFilterViewController.m */; };
 		4CAF507C1B842F7100FE3CBC /* BBPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF507B1B842F7100FE3CBC /* BBPersonalViewController.m */; };
 		4CAF50801B843EF300FE3CBC /* BBIdentifyCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF507F1B843EF300FE3CBC /* BBIdentifyCodeController.m */; };
 		4CAF509D1B84540800FE3CBC /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF50871B84540800FE3CBC /* MJArgument.m */; };
@@ -45,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18389B801B8609C700FE570A /* BBFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFilterViewController.h; sourceTree = "<group>"; };
+		18389B811B8609C700FE570A /* BBFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFilterViewController.m; sourceTree = "<group>"; };
+		18389B831B861D0900FE570A /* BBFilterViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFilterViewCell.h; sourceTree = "<group>"; };
+		18389B841B861D0900FE570A /* BBFilterViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFilterViewCell.m; sourceTree = "<group>"; };
+		18389B851B861D0900FE570A /* BBFilterViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBFilterViewCell.xib; sourceTree = "<group>"; };
+		184A8A851B8575B9000E85D7 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		184A8A861B8575B9000E85D7 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		184A8A871B8575B9000E85D7 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		4CAF50111B8427FC00FE3CBC /* BBGym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBGym.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CAF50151B8427FC00FE3CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CAF50211B8427FC00FE3CBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -58,8 +70,6 @@
 		4CAF50641B842D8E00FE3CBC /* BBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTabBarController.m; sourceTree = "<group>"; };
 		4CAF50661B842DDE00FE3CBC /* BBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBHomeViewController.h; sourceTree = "<group>"; };
 		4CAF50671B842DDE00FE3CBC /* BBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBHomeViewController.m; sourceTree = "<group>"; };
-		4CAF50771B842F4400FE3CBC /* BBFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFilterViewController.h; sourceTree = "<group>"; };
-		4CAF50781B842F4400FE3CBC /* BBFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFilterViewController.m; sourceTree = "<group>"; };
 		4CAF507A1B842F7100FE3CBC /* BBPersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPersonalViewController.h; sourceTree = "<group>"; };
 		4CAF507B1B842F7100FE3CBC /* BBPersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPersonalViewController.m; sourceTree = "<group>"; };
 		4CAF507D1B8430F900FE3CBC /* BBGym-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BBGym-Prefix.pch"; sourceTree = "<group>"; };
@@ -227,6 +237,9 @@
 		4CAF504A1B842A3400FE3CBC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				184A8A851B8575B9000E85D7 /* MyCell.h */,
+				184A8A861B8575B9000E85D7 /* MyCell.m */,
+				184A8A871B8575B9000E85D7 /* MyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,8 +256,11 @@
 		4CAF504C1B842A3400FE3CBC /* Filter */ = {
 			isa = PBXGroup;
 			children = (
-				4CAF50771B842F4400FE3CBC /* BBFilterViewController.h */,
-				4CAF50781B842F4400FE3CBC /* BBFilterViewController.m */,
+				18389B801B8609C700FE570A /* BBFilterViewController.h */,
+				18389B811B8609C700FE570A /* BBFilterViewController.m */,
+				18389B831B861D0900FE570A /* BBFilterViewCell.h */,
+				18389B841B861D0900FE570A /* BBFilterViewCell.m */,
+				18389B851B861D0900FE570A /* BBFilterViewCell.xib */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -361,6 +377,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAF50BC1B846B5700FE3CBC /* BBIdentityHearderView.xib in Resources */,
+				184A8A891B8575B9000E85D7 /* MyCell.xib in Resources */,
+				18389B871B861D0900FE570A /* BBFilterViewCell.xib in Resources */,
 				4CAF50221B8427FC00FE3CBC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,7 +406,7 @@
 				4CAF509F1B84540800FE3CBC /* MJFoundation.m in Sources */,
 				4CAF50A61B84540800FE3CBC /* NSObject+MJKeyValue.m in Sources */,
 				4CAF50651B842D8E00FE3CBC /* BBTabBarController.m in Sources */,
-				4CAF50791B842F4400FE3CBC /* BBFilterViewController.m in Sources */,
+				18389B821B8609C700FE570A /* BBFilterViewController.m in Sources */,
 				4CAF50AD1B8454D100FE3CBC /* UIView+Extension.m in Sources */,
 				4CAF50B01B845D2800FE3CBC /* BBNavigationController.m in Sources */,
 				4CAF50BB1B846B5700FE3CBC /* BBIdentityHearderView.m in Sources */,
@@ -397,6 +415,8 @@
 				4CAF50AC1B8454D100FE3CBC /* UIView+AutoLayout.m in Sources */,
 				4CAF507C1B842F7100FE3CBC /* BBPersonalViewController.m in Sources */,
 				4CAF50A51B84540800FE3CBC /* NSObject+MJCoding.m in Sources */,
+				18389B861B861D0900FE570A /* BBFilterViewCell.m in Sources */,
+				184A8A881B8575B9000E85D7 /* MyCell.m in Sources */,
 				4CAF509E1B84540800FE3CBC /* MJConst.m in Sources */,
 				4CAF50A21B84540800FE3CBC /* MJMethod.m in Sources */,
 				4CAF50A71B84540800FE3CBC /* NSObject+MJMember.m in Sources */,
@@ -582,6 +602,7 @@
 				4CAF50361B8427FC00FE3CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CAF50371B8427FC00FE3CBC /* Build configuration list for PBXNativeTarget "BBGymTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +611,7 @@
 				4CAF50391B8427FC00FE3CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

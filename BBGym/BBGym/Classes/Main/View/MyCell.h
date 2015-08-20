@@ -1,5 +1,5 @@
 //
-//  BBFilterViewController.h
+//  MyCell.h
 //  BBGym
 //
 //  Created by Apple on 15/8/20.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BBFilterViewController : UITableViewController
+@interface MyCell : UICollectionViewCell
+
+@property (nonatomic, strong) IBOutlet UIButton *btn;
 
 @end

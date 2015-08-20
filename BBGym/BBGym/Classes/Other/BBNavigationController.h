@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface BBNavigationController : UINavigationController
-
++ (void)initialize;
 @end

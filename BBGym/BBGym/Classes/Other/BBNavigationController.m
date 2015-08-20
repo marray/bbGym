@@ -17,11 +17,12 @@
 + (void)initialize
 {
     UINavigationBar *bar = [UINavigationBar appearance];
-    [bar setBackgroundImage:[UIImage imageNamed:@"bg_navigationBar_normal"] forBarMetrics:UIBarMetricsDefault];
+    [bar setBackgroundImage:[UIImage imageNamed:@"箭头"] forBarMetrics:UIBarMetricsDefault];
     
     UIBarButtonItem *item = [UIBarButtonItem appearance];
     [item setTitleTextAttributes:@{NSForegroundColorAttributeName : BBColor(21, 188, 173)} forState:UIControlStateNormal];
     [item setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor grayColor]} forState:UIControlStateDisabled];
+    
 }
 
 - (void)viewDidLoad {

@@ -51,7 +51,7 @@
     //设置图片
     vControl.tabBarItem.image=[UIImage imageNamed:image];
     vControl.tabBarItem.selectedImage=[[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    vControl.view.backgroundColor=BBRandomColor;
+//    vControl.view.backgroundColor=BBRandomColor;
     
     //设置tabBarItem字体颜色
     NSMutableDictionary *dic=[NSMutableDictionary dictionary];
